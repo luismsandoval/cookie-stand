@@ -26,8 +26,8 @@ let seattle = {
   render: function () {
     let sales = document.createElement('ul');
     sales.textContent = `${this.name} Store`;
+    salesList.appendChild(sales);
     for (let i = 0; i < this.hour.length; i++) {
-      salesList.appendChild(sales);
       let perHour = document.createElement('li');
       perHour.textContent = `${this.hour[i]}: ${this.cookiesSold[i]} cookies sold`;
       sales.appendChild(perHour);
@@ -65,8 +65,8 @@ let tokyo = {
   render: function () {
     let sales = document.createElement('ul');
     sales.textContent = `${this.name} Store`;
+    salesList.appendChild(sales);
     for (let i = 0; i < this.hour.length; i++) {
-      salesList.appendChild(sales);
       let perHour = document.createElement('li');
       perHour.textContent = `${this.hour[i]}: ${this.cookiesSold[i]} cookies sold`;
       sales.appendChild(perHour);
@@ -104,8 +104,8 @@ let dubai = {
   render: function () {
     let sales = document.createElement('ul');
     sales.textContent = `${this.name} Store`;
+    salesList.appendChild(sales);
     for (let i = 0; i < this.hour.length; i++) {
-      salesList.appendChild(sales);
       let perHour = document.createElement('li');
       perHour.textContent = `${this.hour[i]}: ${this.cookiesSold[i]} cookies sold`;
       sales.appendChild(perHour);
@@ -143,8 +143,8 @@ let paris = {
   render: function() {
     let sales = document.createElement('ul');
     sales.textContent = `${this.name} Store`;
+    salesList.appendChild(sales);
     for (let i = 0; i < this.hour.length; i++) {
-      salesList.appendChild(sales);
       let perHour = document.createElement('li');
       perHour.textContent = `${this.hour[i]}: ${this.cookiesSold[i]} cookies sold`;
       sales.appendChild(perHour);
@@ -182,8 +182,8 @@ let lima = {
   render: function () {
     let sales = document.createElement('ul');
     sales.textContent = `${this.name} Store`;
+    salesList.appendChild(sales);
     for (let i = 0; i < this.hour.length; i++) {
-      salesList.appendChild(sales);
       let perHour = document.createElement('li');
       perHour.textContent = `${this.hour[i]}: ${this.cookiesSold[i]} cookies sold`;
       sales.appendChild(perHour);
