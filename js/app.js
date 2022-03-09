@@ -4,7 +4,9 @@ const tableHeader = document.querySelector('#salesTable thead');
 const tableFooter = document.querySelector('#salesTable thead:last-of-type');
 const tableBody = document.querySelector('#salesTable tbody');
 
-let hour = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+// const tableHeader = document.querySelector('#salesTable thead');
+// const tableFooter = document.querySelector('#salesTable thead:last-of-type');
+// const tableBody = document.querySelector('#salesTable tbody');
 
 function Sales(name, min, max, avg) {
   this.name = name;
@@ -40,13 +42,13 @@ Sales.prototype.totalCookiesSold = function () {
   return this.total, this.cookiesSold;
 };
 
-Sales.prototype.head = function () {
+let head = function () {
   let thIndex = document.createElement('th');
   thIndex.textContent = '';
   tableHeader.appendChild(thIndex);
-  for (let i = 0; i < hour.length; i++) {
+  for (let i = 0; i < salesArray[0].hour.length; i++) {
     let th = document.createElement('th');
-    th.textContent = `${hour[i]}`;
+    th.textContent = `${salesArray[0].hour[i]}`;
     tableHeader.appendChild(th);
   }
   let thTotal = document.createElement('th');
@@ -70,12 +72,12 @@ Sales.prototype.render = function () {
   tr.appendChild(tdTotal);
 };
 
-Sales.prototype.foot = function () {
+let foot = function () {
   let hourTotal = [];
   let thIndex = document.createElement('th');
-  thIndex.textContent ='Total';
+  thIndex.textContent = 'Total';
   tableFooter.appendChild(thIndex);
-  for (let i = 0; i < hour.length; i++) {
+  for (let i = 0; i < salesArray[0].hour.length; i++) {
     let total = 0;
     for (let j = 0; j < salesArray.length; j++) {
       total += salesArray[j].cookiesSold[i];
@@ -94,16 +96,28 @@ Sales.prototype.foot = function () {
   tableFooter.appendChild(thTotal);
 };
 
-
-Sales.prototype.master = function () {
-  Sales.prototype.head();
+let master = function () {
+  head();
   for (let i = 0; i < salesArray.length; i++) {
     let sales = salesArray[i];
     sales.totalCookiesSold();
     sales.render();
   }
-  Sales.prototype.foot();
+  foot();
 };
 
+master();
 
-Sales.prototype.master();
+// Sales.prototype.employee = function () {
+//   let avgCustomerArr = [];
+//   let thIndex = document.createElement('th');
+//   thIndex.textContent = 'Total';
+//   table.appendChild(thIndex);
+//   for (let i = 0; i < hour.length; i++) {
+//     let avgCustomer = 0;
+//     for (let j = 0; j < salesArray.length; i++) {
+//       avgCustomer = salesArray[j].cookiesSold[i] / this.avg;
+//     }
+//     avgCustomerArr.push(avgCustomer);
+//   }
+// };
