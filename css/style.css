@@ -2,17 +2,45 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fbc5bf;
+  background-image: url("../img/background.png");
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 28px;
+  color: #7a605d;
+}
+
 header {
   background-color: salmon;
-  height: 100px
+  height: 100px;
+}
+
+header img {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 ul {
-  float: ;
+  width: 760px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
 }
 
 li {
   display: inline-block;
+  margin-top: 40px;
+  font-family: helvetica, sans-serif;
+  font-size: 28px;
 }
 
 a {
@@ -20,7 +48,6 @@ a {
 }
 
 main {
-  background-color: white;
   width: 960px;
   margin: 15px auto 15px auto;
   display: flex;
@@ -37,7 +64,7 @@ article {
   width: 450px;
   height: 400px;
 }
-article section p {
+section p {
   overflow: scroll;
   height: 380px;
 }
@@ -45,4 +72,12 @@ article section p {
 img {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+header img:first-of-type {
+  background-color: salmon;
+}
+
+article:nth-child(3) p {
+  width: 960px;
 }
