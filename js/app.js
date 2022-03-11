@@ -23,7 +23,7 @@ let salesArray = [
   new Sales('Tokyo', 3, 24, 1.2),
   new Sales('Dubai', 11, 38, 3.7),
   new Sales('Paris', 20, 38, 2.3),
-  new Sales('Seattle', 2, 16, 4.6),
+  new Sales('Lima', 2, 16, 4.6),
 ];
 
 Sales.prototype.randomCustomer = function () {
