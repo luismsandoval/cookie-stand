@@ -4,10 +4,6 @@ const tableHeader = document.querySelector('#salesTable thead');
 const tableFooter = document.querySelector('#salesTable thead:last-of-type');
 const tableBody = document.querySelector('#salesTable tbody');
 
-// const tableHeader = document.querySelector('#salesTable thead');
-// const tableFooter = document.querySelector('#salesTable thead:last-of-type');
-// const tableBody = document.querySelector('#salesTable tbody');
-
 function Sales(name, min, max, avg) {
   this.name = name;
   this.min = min;
@@ -108,16 +104,44 @@ let master = function () {
 
 master();
 
-// Sales.prototype.employee = function () {
-//   let avgCustomerArr = [];
-//   let thIndex = document.createElement('th');
-//   thIndex.textContent = 'Total';
-//   table.appendChild(thIndex);
-//   for (let i = 0; i < hour.length; i++) {
-//     let avgCustomer = 0;
-//     for (let j = 0; j < salesArray.length; i++) {
-//       avgCustomer = salesArray[j].cookiesSold[i] / this.avg;
-//     }
-//     avgCustomerArr.push(avgCustomer);
-//   }
-// };
+
+let resetFooter = function() {
+  while (tableFooter.firstChild) {
+    tableFooter.removeChild(tableFooter.firstChild);
+  } foot();
+};
+
+
+let storeForm = document.getElementById('store_form');
+
+storeForm.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  let form = event.target;
+
+  let city = form.city;
+  let min = form.min;
+  let max = form.max;
+  let avg = form.avg;
+
+  let store = new Sales(city.value, min.value, max.value, avg.value);
+
+  for (let i = 0; i < salesArray.length; i++) {
+    if (city.value === salesArray[i].name) {
+      return;
+    }
+  }
+
+  salesArray.push(store);
+
+  store.randomCustomer();
+  store.totalCookiesSold();
+  store.render();
+
+  resetFooter();
+
+  city.value = '';
+  min.value = '';
+  max.value = '';
+  avg.value = '';
+});

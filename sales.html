@@ -25,17 +25,41 @@
           
         </thead>
       </table>
-      <table id="employeeTable">
-        <thead>
+      
+      <form id="store_form">
+        <fieldset>
+          <legend>New Store</legend>
+          <label>
+            City
+            <input name="city"
+            required
+            >
+          </label>
 
-        </thead>
-        <tbody>
-          
-        </tbody>
-        <thead>
-          
-        </thead>
-      </table>
+          <label>
+            Min
+            <input name="min"
+            required
+            >
+          </label>
+
+          <label>
+            Max
+            <input name="max"
+            required
+            >
+          </label>
+
+          <label>
+            Average
+            <input name="avg"
+            required
+            >
+          </label>
+        </fieldset>
+
+        <button id="button">Add New Store</button>
+      </form>
     </main>
     <a href="index.html">Home</a>
     <script src="js/app.js"></script>
