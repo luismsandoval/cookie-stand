@@ -1,4 +1,4 @@
-# LAB - 08b
+# LAB - 9
 
 ## Salmon Cookies
 
@@ -6,16 +6,20 @@ This is a website I built for Pat where we used constructor functions to track h
 
 I added CSS functionality to the index.html webpage with custom images from the client.
 
+During lab 9 I used the DOM EventListener to attach an event to a specified element of html. In this case, I created a form where the user could input specific variables for a new cookie store and using these user submitted values, add to and adjust the respective table accordingly.
+
 ### Author: Luis Sandoval | Derek Douglass | Zayah Lang | Alan Monkman
 
 ### Links and Resources
 
 - Duckett, John. *HTML & CSS.* Wiley, 2015.
 
+- Duckett, John. *JavaScript & JQUERY.* Wiley, 2015.
+
 - [Mozilla Dev Docs](https://developer.mozilla.org/en-US/)
 
 ### Reflections and Comments
 
-- CSS is hard. I am still having issues selecting specific elements without the use of class or ID.
+- For the most part this lab went well, the biggest issue was adjusting the footer to include the newly added values.
 
-- I find myself jumping around when I am trying to write CSS, when I need to instead start from the top left and break it down from there.
+- I learned that we can use a method to remove an element, and then run another method to replace that element.
