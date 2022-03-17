@@ -15,6 +15,10 @@ header {
 }
 
 header img {
+  float: right;
+}
+
+header img:first-child{
   float: left;
 }
 
@@ -22,6 +26,10 @@ header img {
   content: "";
   clear: both;
   display: table;
+}
+
+header ul {
+  width: auto;
 }
 
 ul {
@@ -43,9 +51,9 @@ li {
 a {
   text-decoration: none;
   color: #fae5df;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: #ed7966;
-  
+  padding: 5px 15px 5px 15px;
 }
 
 a:hover {
@@ -61,8 +69,20 @@ main {
 }
 
 footer {
-    height: 50px;
+    height: 100px;
     background-color: #fae5df;
+}
+
+footer img {
+  margin: 0;
+  float: left;
+}
+
+footer a {
+  float: right;
+  position: relative;
+  top: 40px;
+  right: 50px;
 }
 
 article {
@@ -79,6 +99,7 @@ article {
 }
 
 img {
+  margin: auto;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -96,7 +117,14 @@ h1 {
 
 .location {
   width: 960px;
+  height: 650px;
   overflow: scroll;
+  border-style: none;
+  background-color: white;
+  padding-bottom: 15px;
+}
+.location li {
+  background-color: #fae5df;
 }
 
 .location ul {

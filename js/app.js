@@ -20,6 +20,7 @@ let salesArray = [
   new Sales('Dubai', 11, 38, 3.7),
   new Sales('Paris', 20, 38, 2.3),
   new Sales('Lima', 2, 16, 4.6),
+
 ];
 
 Sales.prototype.randomCustomer = function () {
@@ -111,7 +112,6 @@ let resetFooter = function() {
   } foot();
 };
 
-
 let storeForm = document.getElementById('store_form');
 
 storeForm.addEventListener('submit', function (event) {
@@ -124,7 +124,7 @@ storeForm.addEventListener('submit', function (event) {
   let max = form.max;
   let avg = form.avg;
 
-  let store = new Sales(city.value, min.value, max.value, avg.value);
+  let store = new Sales(city.value, parseInt(min.value), parseInt(max.value), parseInt(avg.value));
 
   for (let i = 0; i < salesArray.length; i++) {
     if (city.value === salesArray[i].name) {
@@ -134,10 +134,13 @@ storeForm.addEventListener('submit', function (event) {
 
   salesArray.push(store);
 
+  console.log(salesArray);
+
   store.randomCustomer();
   store.totalCookiesSold();
   store.render();
-
+  // tableFooter.htmlContent = '';
+  // foot();
   resetFooter();
 
   city.value = '';
