@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  color: #303179;
+  margin: 10px;
+}
+
+header {
+  background-color: #fae5df;
+  height: 100px;
+}
+
+main h1:first-of-type {
+  margin: auto;
+}
+
+header img {
+  float: right;
+}
+
+header img:first-child{
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header ul {
+  width: auto;
+}
+
+ul {
+  width: 760px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+li {
+  display: inline-block;
+  margin-top: 40px;
+  font-family: helvetica, sans-serif;
+  font-size: 28px;
+  color: #303179;
+}
+
+a {
+  text-decoration: none;
+  color: #fae5df;
+  border-radius: 20px;
+  background-color: #ed7966;
+  padding: 5px 15px 5px 15px;
+}
+
+a:hover {
+  color: #303179;
+}
+
+main {
+  width: 960px;
+  margin: 15px auto 15px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer {
+    height: 100px;
+    background-color: #fae5df;
+}
+
+footer img {
+  margin: 0;
+  float: left;
+}
+
+footer a {
+  float: right;
+  position: relative;
+  top: 40px;
+  right: 50px;
+}
+
+article {
+  width: 450px;
+  height: 400px;
+  border: 3px solid #ed7966;
+  border-radius: 10px;
+  margin: 5px auto;
+  background-color: #fae5df;
+}
+
+.family {
+  width: 960px;
+}
+
+img {
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+header img:first-of-type {
+  background-color: #fae5df;
+}
+
+h1 {
+  font-family: helvetica, sans-serif;
+  font-size: xx-large;
+  color: #141850;
+  margin: 5px 5px;
+}
+
+.location {
+  width: 960px;
+  height: 650px;
+  overflow: scroll;
+  border-style: none;
+  background-color: white;
+  padding-bottom: 15px;
+}
+.location li {
+  background-color: #fae5df;
+}
+
+.location ul {
+  display: block;
+  text-align: left;
+}
+
+.name {
+  font-size: 36px;
+}
+
+.address {
+  font-size: 28px;
+}
+
+.tele {
+  font-size: 24px;
+}
+
+.hours li {
+  display: block;
+}
+
+.results {
+  padding: 10px;
+  border: 3px solid #ed7966;
+  border-radius: 10px;
+}
+
+table{
+  width: 100%;
+}
+
+table td, table th {
+  border: thin #0d0d0d solid;
+  padding: 3px 5px;
+  text-align: left;
+}
+
+td:last-of-type, th:last-of-type {
+  text-align: right;
+}
+
+form {
+  width: 80%;
+}
+
+label {
+  display: block;
+  margin: 7px 0 7px 0;
+}
+
+input {
+  width: 100%;
+}
