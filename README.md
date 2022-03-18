@@ -1,4 +1,4 @@
-# LAB - 9
+# LAB - 10b
 
 ## Salmon Cookies
 
@@ -7,6 +7,8 @@ This is a website I built for Pat where we used constructor functions to track h
 I added CSS functionality to the index.html webpage with custom images from the client.
 
 During lab 9 I used the DOM EventListener to attach an event to a specified element of html. In this case, I created a form where the user could input specific variables for a new cookie store and using these user submitted values, add to and adjust the respective table accordingly.
+
+For lab 10 I am adding custom google font for the title, a sans-serif font for data, and a serif font for my text. I am also changing the color of the text for each font type.
 
 ### Author: Luis Sandoval | Derek Douglass | Zayah Lang | Alan Monkman
 
@@ -18,8 +20,8 @@ During lab 9 I used the DOM EventListener to attach an event to a specified elem
 
 - [Mozilla Dev Docs](https://developer.mozilla.org/en-US/)
 
+- [W3 Schools](https://www.w3schools.com/)
+
 ### Reflections and Comments
 
-- For the most part this lab went well, the biggest issue was adjusting the footer to include the newly added values.
-
-- I learned that we can use a method to remove an element, and then run another method to replace that element.
+- This part of the lab I was just adding finishing touches. I learned that we can use a custom google font with a link in order for the font to be implemented on any browser.
