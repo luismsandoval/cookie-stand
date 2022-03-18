@@ -139,8 +139,6 @@ storeForm.addEventListener('submit', function (event) {
   store.randomCustomer();
   store.totalCookiesSold();
   store.render();
-  // tableFooter.htmlContent = '';
-  // foot();
   resetFooter();
 
   city.value = '';
